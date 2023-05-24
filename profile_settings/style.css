@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #f1d3ff;
+    align-items: center;
+    text-align: center;
+}
+
+.container h1{
+    padding: 20px;
+    color: rgb(95, 111, 253);
+    text-align: center;
+}
+
+.container img{
+    width: 200px;
+    height: 200px;
+    margin-top: 30px;
+    border-radius: 100%;
+}
+
+.container ul{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 70px;
+    list-style-type: none;
+}
+
+.container ul li{
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 1px solid rgb(95, 111, 253);
+    transition: 0.5s;
+}
+
+.container ul li:hover{
+    border: 1px solid #f1d3ff;
+    background: rgb(95, 111, 253);
+    color: #fff;
+}
+
+.update_email{
+    width: 80%;
+    margin-top: 40px;
+    margin-left: 10%;
+    padding: 50px;
+    align-items: center;
+    text-align: center;
+    display: none;
+}
+
+.update_email h2{
+    margin-bottom: 20px;
+}
+
+.update_email label{
+    font-size: 20px;
+    color: #190932;
+}
+
+.update_email input{
+    padding: 10px 50px;
+    margin-left: 10px;
+}
+
+.update_email .btn{
+    cursor: pointer;
+    border: 1px solid rgb(95, 111, 253);
+    transition: 0.5s;
+}
+
+.update_email .btn:hover{
+    border: 1px solid #f1d3ff;
+    background: rgb(95, 111, 253);
+    color: #fff;
+}

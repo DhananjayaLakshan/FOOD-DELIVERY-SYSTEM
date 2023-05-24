@@ -1,0 +1,643 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*======================================================================================*/
+/*-----------------css for navigation bar-------------------------*/
+
+.nav{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 6.5rem;
+    background-color: #222;
+    z-index: 100000;
+}
+
+.nav h2{
+    color: #fff;
+    font-size: 1.7rem;
+}
+
+#items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#items li{
+    list-style-type: none;
+    padding-right: 50px;
+}
+
+#items li a{
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+    transition: 0.5s;
+}
+
+#items li a:hover{
+    color: #ff4722;
+    cursor: pointer;
+}
+
+#items .icon a{
+    color: #fff;
+    padding-right: 30px;
+    font-weight: bolder;
+    transition: 0.5s;
+}
+
+#items .icon a:hover{
+    color: #ff4722;
+    cursor: pointer;
+}
+
+/*message (php)*/
+.errormsg{
+    color: #ff4722;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 18px;
+  }
+
+/*======================================================================================*/
+/*-----------------css for Background----------------------------*/
+
+.back{
+    background-image: url(images/bg.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    z-index: -1;
+}
+
+.back .overlay{
+    background: #171819;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+}
+
+/*======================================= END ===========================================*/
+
+/*======================================================================================*/
+/*-----------------css for section 01 content----------------------------*/
+
+.mid{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.mid p{
+    color: #7f8c8d;
+    font-size: 1.3rem;
+    margin-bottom: 1.4rem;
+}
+
+.mid h2{
+    color: #fff;
+    font-size: 3rem;
+}
+
+.mid .btn{
+    margin-top: 2rem;
+}
+
+.mid .btn a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.mid .btn a.simple{
+    color: #fff;
+    font-weight: 500;
+    padding: 0.9rem 1.6rem;
+    transition: 0.5s;
+}
+
+.mid .btn a.simple:hover{
+    color: #ff4722;
+}
+
+.mid .btn a.border{
+    color: #ff4722;
+    border: 1px solid #ff4722;
+    font-weight: 500;
+    padding: 0.9rem 1.6rem;
+    transition: 0.5s;
+}
+
+.mid .btn a.border:hover{
+    color: rgba(255, 255, 255, 0.61);
+    border: 1px solid rgba(255, 255, 255, 0.61);
+}
+
+/*======================================= END ===========================================*/
+
+/*======================================================================================*/
+/*-----------------css for section 02 content----------------------------*/
+
+.details{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8rem 15rem;
+    background-color: #171819;
+}
+
+.details h3,h5,h6{
+    color: #fff;
+}
+
+.details .one{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.details .one h3{
+    font-size: 2.5rem;
+    padding-bottom: 1.1rem;
+}
+
+.details .one h6{
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding-bottom: 1.2rem;
+    color: #7f8c8d;
+}
+
+.details .one p{
+    font-size: 1.2rem;
+    padding-bottom: 3rem;
+    color: #666262;
+}
+
+.details .one a{
+    text-decoration: none;
+    color: #ff4722;
+    border: 1px solid #ff4722;
+    padding: 0.9rem 1.6rem;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.details .one a:hover{
+    color: rgba(255, 255, 255, 0.61);
+    border: 1px solid rgba(255, 255, 255, 0.61);
+}
+
+.details .two{
+    width: 45%;
+    border-left: 1px solid #7f8c8d;
+    padding-left: 4rem;
+}
+
+.details .two h3{
+    font-size: 2.5rem;
+}
+
+.details .two h5{
+    font-size: 1.1rem;
+}
+
+.details .two p{
+    font-size: 1.1rem;
+    color: #666262;
+    margin-bottom: 0.8rem;    
+}
+
+
+/*======================================= END ===========================================*/
+
+/*======================================================================================*/
+/*-----------------css for section 03 content----------------------------*/
+
+.chef{
+    width: 100%;
+    height: 100vh;
+    padding: 8rem;
+    background-color: #ffffff3f;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chef .about{
+    width: 39%;
+}
+
+.chef .about h2{
+    font-size: 2.1rem;
+    color: #212925;
+    padding-bottom: 1.8rem;
+}
+
+.chef .about p{
+    font-size: 1.1rem;
+    color: #212925bb;
+}
+
+.chef .people{
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.chef .people .team1{
+    width: 45%;
+    height: auto;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 14px 13px 26px -11px rgba(25,42,204,0.81);
+    -webkit-box-shadow: 14px 13px 26px -11px rgba(25,42,204,0.81);
+    -moz-box-shadow: 14px 13px 26px -11px rgba(25,42,204,0.81);
+}
+
+.chef .people .team1 .img img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.chef .people .team1 .teamDetails .name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.chef .people .team1 .teamDetails .pro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chef .people .team1 .teamDetails .name h4{
+    font-size: 1.5rem;
+    color: #212529;
+}
+
+.chef .people .team1 .teamDetails .name i ,.chef .people .team1 .teamDetails .pro i{
+    font-size: 1.3rem;
+    font-weight: bolder;
+    cursor: pointer;
+    color: #212529;
+}
+
+.chef .people .team1 .teamDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.chef .people .team1 .teamDetails .name{
+    padding: 5px 20px 0 20px;
+}
+
+.chef .people .team1 .teamDetails .pro{
+    padding: 0 20px 5px 20px;
+}
+
+
+/*======================================= END ===========================================*/
+
+/*======================================================================================*/
+/*-----------------css for section 04 content----------------------------*/
+
+.class{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem 8rem;
+}
+
+.class .para{
+    font-size: 1.3rem;
+    color: #666262;
+    padding-bottom: 6px;
+    text-align: center;
+}
+
+.class .h2{
+    font-size: 2.2rem;
+    color: #222;
+    font-weight: 700;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.class .classMenu .team1{
+    width: 32%;
+    height: auto;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 14px 13px 26px -11px rgba(25,42,204,0.81);
+    -webkit-box-shadow: 14px 13px 26px -11px rgba(25,42,204,0.81);
+    -moz-box-shadow: 14px 13px 26px -11px rgba(25,42,204,0.81);
+}
+
+.class .classMenu .team1 .img img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.class .classMenu .team1 .teamDetails .name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.class .classMenu .team1 .teamDetails .pro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.class .classMenu .team1 .teamDetails .name h5{
+    font-size: 1.5rem;
+    color: #212529;
+}
+
+.class .classMenu .team1 .teamDetails .name i ,.class .classMenu .team1 .teamDetails .pro i{
+    font-size: 1.3rem;
+    font-weight: bolder;
+    cursor: pointer;
+    color: #212529;
+}
+
+.class .classMenu .team1 .teamDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.class .classMenu .team1 .teamDetails .name{
+    padding: 5px 20px 0 20px;
+}
+
+.class .classMenu .team1 .teamDetails .pro{
+    padding: 0 20px 5px 20px;
+}
+
+.class .classMenu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*======================================= END ===========================================*/
+
+/*======================================================================================*/
+/*-----------------css for section 04 content----------------------------*/
+
+.contact{
+    width: 100%;
+    height: 100vh;
+    padding: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact .form{
+    width: 45%;
+}
+
+.contact .form h2{
+    font-size: 2rem;
+    color: #353535;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.contact .form .submit{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.contact .form .submit input{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #95a5a9;
+    outline: none;
+    margin: 13px 0;
+}
+
+.contact .form .submit input:focus{
+    border: 1px solid #272829;
+}
+
+.contact .form .submit input::placeholder{
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    height: 80%;
+}
+
+.contact .form .submit textarea{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #95a5a9;
+    outline: none;
+    margin: 13px 0;
+}
+
+.contact .form .submit textarea:focus{
+    border: 1px solid #272829;
+}
+
+.contact .form .submit textarea::placeholder{
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    height: 80%;
+}
+
+.contact .form button{
+    width: 100%;
+    padding: 15px;
+    background-color: #111;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.contact .findUs{
+    width: 45%;
+}
+
+/*=====================================================================*/
+/*--------login page----------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+
+
+.center h1{
+  text-align: center;
+  padding: 20px 0;
+  color: #cfcccc;
+  border-bottom: 1px solid silver;
+}
+.center form{
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+form .txt_field{
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 30px 0;
+}
+.txt_field input{
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+.txt_field label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #cfcccc;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: .5s;
+}
+.txt_field span::before{
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background:#ff4722;
+  transition: .5s;
+}
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+  top: -5px;
+  color: #ff4722;
+}
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+  width: 100%;
+}
+
+input[type="submit"]{
+  width: 100%;
+  height: 50px;
+  border: 1px solid;
+  background: #ff4722;
+  border-radius: 25px;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+}
+input[type="submit"]:hover{
+  border-color: #ff4722;
+  transition: .5s;
+}
+.signup_link{
+  margin: 30px 0;
+  text-align: center;
+  font-size: 16px;
+  color:#cfcccc;
+}
+.signup_link a{
+  color: #ff4722;
+  text-decoration: none;
+}
+.signup_link a:hover{
+  text-decoration: underline;
+}
+
+/*=======================Footer=======================*/
+
+.end{
+    width: 100%;
+    height: 55vh;
+    background:linear-gradient(to left,#171819df,#171819b2),url(images/bg.jpg);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.end .persons{
+    width: 45%;
+    height: auto;
+    color: #fff;
+}
+
+.end .persons .person1,.person2{
+    padding: 20px 0 20px 40px;
+}
+
+.end .persons .full_detail{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.end .persons .person1,.person2 .full_detail .dev_details{
+    gap: 10px;
+}
+
+
+.end .persons i{
+    cursor: pointer;
+}
+
+.end .persons i:hover{
+    color: #f52004;
+}
+
+.pizzaway_details{
+    width: 45%;
+    color: #fff;
+
+}
+
+.pizzaway_details .icon i{
+    padding:20px 20px 20px 0;
+    font-size: 20px;
+    color: #fff;
+
+}
+
+.pizzaway_details .icon i:hover{
+    color: #ff4d00;
+}

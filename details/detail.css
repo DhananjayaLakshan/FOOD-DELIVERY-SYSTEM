@@ -1,0 +1,451 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*======================================================================================*/
+/*-----------------css for navigation bar-------------------------*/
+
+.nav{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 6.5rem;
+    background-color: #222;
+    z-index: 100000;
+}
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.profile img{
+    margin-left: 20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.nav h2{
+    color: #fff;
+    font-size: 1.7rem;
+}
+
+#items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#items li{
+    list-style-type: none;
+    padding-right: 50px;
+}
+
+#items li a{
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+    transition: 0.5s;
+}
+
+#items li a:hover{
+    color: #ff4722;
+    cursor: pointer;
+}
+.profile{
+    display: flex;
+    flex-direction: row;
+}
+.profile .icon a{
+    color: #fff;
+    
+    font-weight: bolder;
+    transform: 0.5s;
+}
+
+.profile .icon a:hover{
+    color: #ff4722;
+    cursor: pointer;
+}
+
+/*========================================================================================*/
+/*<!----------------------------------------------------------------------------------->
+<!------------------------------Pop up profile box--------------------------->*/
+
+.popup_profile{
+    margin-top: 70px;
+    margin-left: 75%;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    height: 500px;
+    background-color: rgba(22, 22, 22, 0.644);
+    z-index: 10000000000000000000000000000000;
+    position: fixed;
+    border-radius: 10px;
+    display: none;
+}
+.popup_profile img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin-top: 10px;
+}
+
+.popup_profile p{
+    color: rgba(255, 255, 255, 0.651);
+}
+.popup_profile img:hover{
+    box-shadow: 0 0 0 10px #ff472277;
+}
+
+.popup_profile .logout{
+    
+    background-color: #aa0404;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+    margin-top: 10px;
+    opacity: 0.8;
+    border-radius: 10px;
+    transition: 0.8s;
+}
+
+.popup_profile .logout:hover{
+    background-color: #ffb922;
+    color: #000000;
+}
+
+.popup_profile .btn-cancel{
+    background-color: #aa0404;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+    margin-top: 10px;
+    opacity: 0.8;
+    border-radius: 10px;
+    transition: 0.9s;
+}
+
+.popup_profile .btn-cancel:hover{
+    background-color: #ffb922;
+    color: #000000;
+}
+
+.popup_profile h2{
+    margin-top: 10px;
+    color: #fff;
+
+}
+
+.searchItems{
+    
+    margin-top: 350px;
+    margin-left: 450px;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    height: 30vh;
+    background-color: rgba(44, 40, 37, 0.877);
+    z-index: 10000000000000000000000000000000;
+    position: fixed;
+    border-radius: 10px;
+    display: none;
+    box-shadow:0 0 20px 0  rgba(255, 81, 0, 0.877);
+}
+
+.searchItems form{
+    padding-top: 50px;
+    text-align: center;
+}
+
+.searchItems form input{
+    padding: 8px 15px;
+    border-radius: 50px;
+    background-color: #ffffff;
+    border: none;
+}
+
+.searchItems form button{
+    padding-left: 10px;
+    background-color: transparent;
+    border: none;
+}
+
+
+/*======================================================================================*/
+/*-----------------css for Background----------------------------*/
+
+.back{
+    background-image: url(images/bg.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    z-index: -1;
+}
+
+.back .overlay{
+    background: #171819;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+}
+
+/*======================================= END ===========================================*/
+
+/*======================================================================================*/
+/*-----------------css for section 01 content----------------------------*/
+
+.mid{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.mid h2{
+    color: #fff;
+    font-size: 3rem;
+}
+
+.mid .p1{
+    color: #c7ced4;
+    font-size: 1.2rem;
+    margin: 15px 0;
+}
+
+.mid .review{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.mid .review .per1{
+    width: 30%;
+    height: auto;
+    padding: 1rem;
+    border-radius: 10px;
+    display: block;
+    z-index: 10;
+    text-align: center;
+    background-color: #ff4722b6;
+    margin: 10px 10px;
+    text-transform: uppercase;
+}
+
+.mid .review .per1 .rate{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mid .review .per1 .star_rate{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.mid .review .per1 .intro{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.mid .review .per1 .intro img{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
+
+
+/*======================================= END ===========================================*/
+/*======================================= END ===========================================*/
+
+
+
+
+
+/*======================================================================
+
+/*===============================================================*/
+
+.products{
+    width: 100%;
+    height: 100vh;
+    padding-top: 80px;
+}
+
+.products h1{
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+.social i{
+    font-size: 20px;
+    color: #fff;
+    padding-left: 10px;
+}
+
+/*====================================================================================*/
+/*----------------------------non-vegi section-----------------------------------------*/
+
+.non_vegi{
+    width: 100%;
+    height: 100vh;
+}
+
+.non_vegi .topic{
+    font-size: 35px;
+    padding-top: 100px;
+    text-align: center;
+
+}
+
+.non_vegi .dis{
+    gap: 10px;
+    color: #0000009c;
+    text-align: center;
+}
+
+.shop{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4,250px);
+    gap: 30px;
+    justify-content: center;
+}
+.item{
+    box-shadow: 10px 9px 17px 5px rgba(82,67,94,0.53);
+    -webkit-box-shadow: 10px 9px 17px 5px rgba(82,67,94,0.53);
+    -moz-box-shadow: 10px 9px 17px 5px rgba(82,67,94,0.53);
+    border-radius: 4px;
+}
+
+.item:hover{
+    box-shadow: 10px 9px 17px 5px rgba(255,75,0,0.22);
+    -webkit-box-shadow: 10px 9px 17px 5px rgba(255,75,0,0.22);
+    -moz-box-shadow: 10px 9px 17px 5px rgba(255,75,0,0.22);
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+.price{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.price i{
+    font-size: 20px;
+    color: #171819;
+}
+
+.price i:hover{
+    color: rgb(252, 101, 0);
+    cursor: pointer;
+}
+
+.price form .addcart{
+    text-decoration: none;
+    color: #171819b0;
+    padding: 10px;
+    background-color: #ff4722;
+    border-radius: 4px;
+    transition: 1s;
+}
+
+.price form .addcart:hover{
+    color: #fff;
+    background-color: #000000;
+}
+
+
+
+
+/*=======================Footer=======================*/
+
+.end{
+    width: 100%;
+    height: 55vh;
+    background:linear-gradient(to left,#171819df,#171819b2),url(images/bg.jpg);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.end .persons{
+    width: 45%;
+    height: auto;
+    color: #fff;
+}
+
+.end .persons .person1,.person2{
+    padding: 20px 0 20px 40px;
+}
+
+.end .persons .full_detail{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.end .persons .person1,.person2 .full_detail .dev_details{
+    gap: 10px;
+}
+
+
+.end .persons i{
+    cursor: pointer;
+}
+
+.end .persons i:hover{
+    color: #f52004;
+}
+
+.pizzaway_details{
+    width: 45%;
+    color: #fff;
+
+}
+
+.pizzaway_details .icon i{
+    padding:20px 20px 20px 0;
+    font-size: 20px;
+    color: #fff;
+
+}
+
+.pizzaway_details .icon i:hover{
+    color: #ff4d00;
+}

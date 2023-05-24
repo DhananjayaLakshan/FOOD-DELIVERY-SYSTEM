@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.cart-page{
+    margin: 80px auto;
+}
+
+table{
+    background-color: #dfe4ea;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    border-collapse: collapse;
+    
+}
+
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info{
+    margin-top: 5px;
+}
+
+th{
+    text-align: left;
+    padding: 20px;
+    color: #fff;
+    background-color:#ff523b;
+    font-weight: normal;
+}
+
+td{
+    padding: 20px;
+
+}
+
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+
+td a{
+    color:red;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+td img
+{
+    margin-top: 5px;
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.total-price{
+    display: flex;
+   
+}
+
+.total-price table{
+    border-top: 3px solid #ff523b;
+    width: 70%;
+
+    
+}
+
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
+
+
+
+
+
+/*=======================Footer=======================*/
+
+.end{
+    padding-top: 50px;
+    width: 100%;
+    height: 55vh;
+    background:linear-gradient(to left,#171819df,#171819b2),url(images/bg.jpg);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.end .persons{
+    width: 45%;
+    height: auto;
+    color: #fff;
+}
+
+.end .persons .person1,.person2{
+    padding: 20px 0 20px 40px;
+}
+
+.end .persons .full_detail{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.end .persons .person1,.person2 .full_detail .dev_details{
+    gap: 10px;
+}
+
+
+.end .persons i{
+    cursor: pointer;
+}
+
+.end .persons i:hover{
+    color: #f52004;
+}
+
+.pizzaway_details{
+    width: 45%;
+    color: #fff;
+
+}
+
+.pizzaway_details .icon i{
+    padding:20px 20px 20px 0;
+    font-size: 20px;
+    color: #fff;
+
+}
+
+.pizzaway_details .icon i:hover{
+    color: #ff4d00;
+}
+
+.checkout{
+    text-decoration: none;
+    color: #171819b0;
+    padding: 10px;
+    background-color: #ff4722;
+    border-radius: 4px;
+    transition: 1s;
+
+}
+
+.checkout:hover{
+    color: #fff;
+    background-color: #000000;
+}
