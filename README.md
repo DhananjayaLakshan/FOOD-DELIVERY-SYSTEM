@@ -2,7 +2,7 @@
 
 <p>
 With this system customers can order food and make payments. The front-end of the system is coded using HTML, CSS, JavaScript, and back-end is coded using PHP.
-I implemented all back-end parts and front-end of the admin dashboard and shopping cart. This system includes a admin dashboard.
+I implemented all back-end parts and front-end of the admin dashboard and shopping cart. This system includes a admin dashboard.Used xampp as server. 
 </p>
 
 <ul>
